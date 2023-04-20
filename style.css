@@ -1,65 +1,124 @@
-/* latin-ext */
-@font-face {
-    font-family: 'Righteous';
-    font-style: normal;
+{
+    margin: 0 10px;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+  }
+  
+  body {
+    font-size: 100%;
+    background: linear-gradient(68.15deg, #232c2f 16.62%, #1a8e37 85.61%);
+  }
+  
+  .cabecalho {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 24px;
+  }
+  
+  .cabecalho-imagem {
+    height: 72px;
+  }
+  
+  .cabecalho-menu {
+    display: flex;
+    gap: 32px;
+  }
+  
+  .cabecalho-menu-item {
+    font-family: 'Sarala', sans-serif;
+    color: #0a0217;
     font-weight: 400;
-    src: url(https://fonts.gstatic.com/s/righteous/v13/1cXxaUPXBpj2rGoU7C9WhnGFucE.woff2) format('woff2');
-    unicode-range: U+0100-02AF, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    font-size: 18px
   }
-  /* latin */
-  @font-face {
-    font-family: 'Righteous';
-    font-style: normal;
+  
+  .conteudo {
+    margin-bottom: 48px;
+    border-top: 0.4px solid #118fe3;
+  }
+  
+  .conteudo-principal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  .conteudo-principal-escrito {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+  
+  .conteudo-principal-escrito-titulo {
+    font-family: 'Righteous', cursive;
     font-weight: 400;
-    src: url(https://fonts.gstatic.com/s/righteous/v13/1cXxaUPXBpj2rGoU7C9WiHGF.woff2) format('woff2');
-    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    font-size: 64px;
+    color: #FFF2E7;
   }
-  /* devanagari */
-  @font-face {
-    font-family: 'Sarala';
-    font-style: normal;
+  
+  .conteudo-principal-escrito-subtitulo {
+    font-family: 'Sarala', sans-serif;
     font-weight: 400;
-    src: url(https://fonts.gstatic.com/s/sarala/v10/uK_y4riEZv4o1w9hDBcSAv4.woff2) format('woff2');
-    unicode-range: U+0900-097F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FF;
+    font-size: 24px;
+    color: #ECD6C4;
   }
-  /* latin-ext */
-  @font-face {
-    font-family: 'Sarala';
-    font-style: normal;
+  
+  .conteudo-principal-escrito-botao {
+    background-color: #ECD6C4;
+    width: 180px;
+    height: 60px;
+    border: none;
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    font-family: 'Sarala', sans-serif;
     font-weight: 400;
-    src: url(https://fonts.gstatic.com/s/sarala/v10/uK_y4riEZv4o1w9hAxcSAv4.woff2) format('woff2');
-    unicode-range: U+0100-02AF, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    font-size: 24px;
+    color: #2F2325;
   }
-  /* latin */
-  @font-face {
-    font-family: 'Sarala';
-    font-style: normal;
+  
+  .conteudo-principal-escrito-botao:hover {
+    background-color: rgba(236, 214, 196, 0.53);
+  }
+  
+  .conteudo-principal-imagem {
+    height: 430px;
+  }
+  
+  .conteudo-secundario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    margin-top: 48px;
+  }
+  
+  .conteudo-secundario-titulo {
+    border-top: 0.4px solid #FFF2E7;
+    padding-top: 48px;
+    font-family: 'Righteous', cursive;
     font-weight: 400;
-    src: url(https://fonts.gstatic.com/s/sarala/v10/uK_y4riEZv4o1w9hDRcS.woff2) format('woff2');
-    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    font-size: 24px;
+    color: #FFF2EF;
+    margin-bottom: 16px;
   }
-  /* devanagari */
-  @font-face {
-    font-family: 'Sarala';
-    font-style: normal;
-    font-weight: 700;
-    src: url(https://fonts.gstatic.com/s/sarala/v10/uK_x4riEZv4o1w9ptjIHPN-ZZkM.woff2) format('woff2');
-    unicode-range: U+0900-097F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FF;
+  
+  .conteudo-secundario-paragrafo {
+    font-family: 'Sarala', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    color: #ECD6C4;
   }
-  /* latin-ext */
-  @font-face {
-    font-family: 'Sarala';
-    font-style: normal;
-    font-weight: 700;
-    src: url(https://fonts.gstatic.com/s/sarala/v10/uK_x4riEZv4o1w9ptjIHM9-ZZkM.woff2) format('woff2');
-    unicode-range: U+0100-02AF, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  
+  .rodape {
+      padding: 32px;
+      border-top: 0.4px solid #FFF2E7;
   }
-  /* latin */
-  @font-face {
-    font-family: 'Sarala';
-    font-style: normal;
-    font-weight: 700;
-    src: url(https://fonts.gstatic.com/s/sarala/v10/uK_x4riEZv4o1w9ptjIHPd-Z.woff2) format('woff2');
-    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  
+  .rodape-imagem {
+    height: 72px;
+    display: block;
+    margin: 0 auto;
   }
-
